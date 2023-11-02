@@ -751,7 +751,7 @@ body {
 
 .review-form-input--wrapper {
   position: relative;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   /* margin-bottom: 8px; */
 }
 
@@ -803,8 +803,8 @@ body {
 }
 
 .review-form-checkbox-wrapper {
-  /* margin-bottom: 24px; */
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  /* margin-bottom: 16px; */
 }
 
 .privacy-policy-link {
