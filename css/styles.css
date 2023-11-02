@@ -72,12 +72,15 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /*  ===== /COMMON STYLES ===== */
 
 /*  ===== HEADER ===== */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .container-one {
@@ -113,7 +116,7 @@ body {
 }
 
 .menu-item:first-child .menu-link-after {
-  color: #404BBF;
+  color: #404bbf;
 }
 
 .menu-link-after::after {
@@ -175,6 +178,7 @@ body {
 .menu-address-link:focus {
   color: #404bbf;
 }
+
 /*  ===== /HEADER ===== */
 
 /*  ===== HERO STYLES ===== */
@@ -182,15 +186,13 @@ body {
 .page-hero {
   background-repeat: no-repeat;
   background-position: center;
-  
+
   max-width: 1440px;
   margin: 0 auto;
   /* background: #2e2f42; */
   padding: 188px 0;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
     url('../images/people-office-hero.jpg');
   background-size: cover;
 }
@@ -233,6 +235,7 @@ body {
 .hero-btn:focus {
   background-color: #404bbf;
 }
+
 /*  ===== /HERO STYLES ===== */
 
 /*  ===== FEATURES STYLES ===== */
@@ -271,6 +274,7 @@ body {
   color: var(--secondary-text-color);
   letter-spacing: 0.02em;
 }
+
 /*  ===== /FEATURES STYLES ===== */
 
 /*  =====   TEAM STYLES ===== */
@@ -318,6 +322,7 @@ body {
   /* margin-top: 32px; */
   margin-bottom: 8px;
 }
+
 .team-paragraph {
   color: var(--secondary-text-color);
   text-align: center;
@@ -337,11 +342,11 @@ body {
   width: 100%;
   height: 100%;
   flex-shrink: 0;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #4d5ae5;
   border-radius: 50%;
-  
+
   line-height: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 12px 12px;
@@ -356,6 +361,7 @@ justify-content: center;
 .social-list-link:focus {
   background-color: #404bbf;
 }
+
 /*  ===== /TEAM STYLES ===== */
 
 /*  ===== PORTFOLIO STYLES ===== */
@@ -388,6 +394,7 @@ justify-content: center;
   column-gap: 24px;
   row-gap: 48px;
 }
+
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
   position: relative;
@@ -446,17 +453,19 @@ justify-content: center;
   color: var(--secondary-text-color);
   letter-spacing: 0.02em;
 }
+
 /*  ===== /PORTFOLIO STYLES ===== */
 
 /*  ===== FOOTER STYLES ===== */
 .page-footer {
+  max-width: 1440px;
   padding: 100px 0;
   background-color: var(--primari-text-color);
 }
 
 .container-footer {
   display: flex;
-  align-items: baseline
+  align-items: baseline;
 }
 
 .text-footer {
@@ -489,13 +498,13 @@ justify-content: center;
   color: #f4f4fd;
   letter-spacing: 0.02em;
   width: 264px;
-  
+
   padding-bottom: 100px;
 }
 
 .footer-title {
   margin-bottom: 16px;
-  
+
   color: var(--bgd-white-color);
 
   font-style: normal;
@@ -507,6 +516,7 @@ justify-content: center;
   gap: 16px;
   justify-content: center;
   align-items: center;
+
 }
 
 .footer-social-list-link {
@@ -529,4 +539,209 @@ justify-content: center;
   background-color: #31d0aa;
 }
 
+.footer-paragraph-email {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-left: 80px;
+  margin-bottom: 16px;
+}
+
+.footer-name-label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.footer-input {
+  height: 40px;
+  width: 264px;
+  background-color: #2E2F42;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 80px;
+  padding: 8px 16px;
+  color: #FFFFFF;
+}
+
+.footer-input::placeholder {
+  color: #FFFFFF;
+}
+
+.footer-btn {
+  border-radius: 4px;
+  background-color: #4D5AE5;
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 40px;
+  width: 165px;
+  margin-left: 24px;
+}
+
 /*  ===== /FOOTER STYLES ===== */
+
+/*  ===== BACKDROP STYLES ===== */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/*  ===== /BACKDROP STYLES ===== */
+
+/*  ===== MODAL WINDOW STYLES ===== */
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  border-radius: 50px;
+  background-color: #e7e9fc;
+  line-height: 0;
+  padding: 8px;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  fill: #ffffff;
+}
+
+.modal-clise-btn-icon {
+  width: 8px;
+  height: 8px;
+}
+
+.review-form-description {
+  margin-bottom: 16px;
+  width: 360px;
+  color: #2e2f42;
+  text-align: center;
+  font-size: 16px;
+
+  font-weight: 500;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+}
+
+/*  ===== /MODAL WINDOW STYLES ===== */
+
+/*  ===== REVIEW FOR STYLES ===== */
+
+.review-form-field-label {
+  display: block;
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.review-form-field {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.40);
+  padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-field:focus {
+  border-color: #4D5AE5;
+  outline-color: transparent;
+  outline-offset: 4px;
+}
+
+.review-form-field-wrapper {
+  margin-bottom: 8px;
+}
+
+.review-form-input--wrapper {
+  position: relative;
+}
+
+.review-form-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-field:focus+.review-form-field-icon {
+  fill: #4D5AE5;
+}
+
+.review-form-message {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.40);
+  resize: none;
+  padding: 8px 16px;
+  color: rgba(46, 47, 66, 0.40);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17px;
+  letter-spacing: 0.04em;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.review-form-message::placeholder {
+  color: rgba(46, 47, 66, 0.40);
+}
+
+.review-form-message:focus {
+  border-color: #4D5AE5;
+  outline-color: transparent;
+  outline-offset: 4px;
+}
+
+/*  ===== /REVIEW FOR STYLES ===== */
