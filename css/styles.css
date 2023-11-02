@@ -544,6 +544,7 @@ body {
 }
 
 .footer-form {
+  gap: 24px;
   display: flex;
   flex-direction: row;
 }
@@ -572,9 +573,12 @@ body {
   border-radius: 4px;
   border: 1px solid #ffffff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
+  background-color: transparent;
   padding: 8px 16px;
   color: #ffffff;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-input::placeholder {
@@ -599,7 +603,7 @@ body {
   min-height: 40px;
   letter-spacing: 0.04em;
   border: none;
-  margin-left: 24px;
+  /* margin-left: 24px; */
 }
 
 .footer-btn:hover,
@@ -607,6 +611,9 @@ body {
   background-color: #404bbf;
 }
 
+.footer-svg {
+  margin-left: 16px;
+}
 /*  ===== /FOOTER STYLES ===== */
 
 /*  ===== BACKDROP STYLES ===== */
@@ -651,20 +658,31 @@ body {
   padding-right: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
+  justify-content: center;
+  align-items: center;
+  display: flex;
   position: absolute;
   top: 24px;
   right: 24px;
-  border: none;
-  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   background-color: #e7e9fc;
   line-height: 0;
-  padding: 8px;
+  padding: 0;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-clise-btn-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
@@ -712,6 +730,8 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
 }
 
 .review-form-field:focus {
@@ -721,7 +741,7 @@ body {
 }
 
 .review-form-field-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .review-form-input--wrapper {
@@ -750,9 +770,11 @@ body {
   color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.17px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  outline: transparent;
 }
 
 .review-form-message::placeholder {
@@ -809,6 +831,8 @@ body {
   .review-form-own-checkbox {
   background-color: #404bbf;
   fill: #ffffff;
+  border: none;
+  fill: #F4F4FD;
 }
 
 .review-form-checkbox:focus
