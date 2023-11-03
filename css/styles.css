@@ -49,14 +49,9 @@ body {
 }
 
 .container {
-  /* width: 1158px; */
   max-width: calc(70.5rem + 30px);
-  /* margin-left: auto;
-  margin-right: auto; */
   margin: 0 auto;
   padding: 0 15px;
-  /* padding-left: 0 15px;
-  padding-right: 0 15px; */
 }
 
 .visually-hidden {
@@ -228,7 +223,6 @@ body {
   padding-top: 16px;
   padding-right: 32px;
   padding-bottom: 16px;
-  /* margin-bottom: 188px; */
   margin-top: 48px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -321,7 +315,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  /* margin-top: 32px; */
+
   margin-bottom: 8px;
 }
 
@@ -413,10 +407,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
   padding: 40px 32px;
-  /* padding-left: 32px;
-  padding-top: 40px;
-  padding-right: 32px;
-  padding-bottom: 164px; */
+
   color: #f4f4fd;
   position: absolute;
   top: 0;
@@ -447,7 +438,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  /* margin-top: 32px; */
+
   margin-bottom: 8px;
 }
 
@@ -549,16 +540,6 @@ body {
   flex-direction: row;
 }
 
-/* .footer-paragraph-email {
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin-left: 80px;
-  margin-bottom: 16px;
-} */
-
 .footer-name-label {
   font-size: 12px;
   font-weight: 400;
@@ -603,7 +584,6 @@ body {
   min-height: 40px;
   letter-spacing: 0.04em;
   border: none;
-  /* margin-left: 24px; */
 }
 
 .footer-btn:hover,
@@ -660,7 +640,6 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .modal-close-btn {
@@ -681,7 +660,6 @@ body {
   stroke: rgba(0, 0, 0, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
 .modal-clise-btn-icon {
@@ -746,17 +724,14 @@ body {
 
 .review-form-field-wrapper {
   margin-bottom: 8px;
-  /* margin-bottom: 16px; */
 }
 
 .review-form-input--wrapper {
   position: relative;
-  
-  /* margin-bottom: 8px; */
 }
 
 .review-form-field-textarea {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .review-form-field-icon {
@@ -808,7 +783,6 @@ margin-bottom: 16px;
 
 .review-form-checkbox-wrapper {
   margin-bottom: 24px;
-  /* margin-bottom: 16px; */
 }
 
 .privacy-policy-link {
@@ -844,7 +818,7 @@ margin-bottom: 16px;
   background-color: #404bbf;
   fill: #ffffff;
   border: none;
-  fill: #F4F4FD;
+  fill: #f4f4fd;
 }
 
 .review-form-checkbox:focus
