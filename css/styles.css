@@ -751,8 +751,12 @@ body {
 
 .review-form-input--wrapper {
   position: relative;
-  margin-bottom: 16px;
+  
   /* margin-bottom: 8px; */
+}
+
+.review-form-field-textarea {
+margin-bottom: 16px;
 }
 
 .review-form-field-icon {
